@@ -77,18 +77,16 @@ a {
   padding: 0 20px;
 }
 /* Ji's sections */
-.mobileBanking {
-  .mobileBankingContainer {
-    .mobileBankingTop {
-      background-color: var(--bg-color-green);
+.mobileBankingOneSection {
+  background-color: var(--bg-color-green);
+
+  .mobileBankingOneContainer {
+    .mobileBankingOne {
       display: flex;
       img {
         display: flex;
         padding: 48px;
         width: 50vw;
-
-
-
       }
 
       .infoTop {
@@ -98,20 +96,22 @@ a {
         padding: 48px;
         justify-content: center;
         width: 50%;
-
       }
     }
+  }
+}
 
-    .mobileBankingBottom {
-      background-color: var(--bg-color-pink);
+.mobileBankingTwoSection {
+  background-color: var(--bg-color-pink);
+
+  .mobileBankingTwoContainer {
+    .mobileBankingTwo {
       display: flex;
-
       img {
         display: flex;
+
         padding: 48px;
         width: 50vw;
-
-
       }
 
       .infoBottom {
@@ -121,7 +121,6 @@ a {
         padding: 48px;
         justify-content: center;
         width: 50%;
-
       }
     }
   }
