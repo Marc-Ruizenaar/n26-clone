@@ -1,274 +1,321 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --main-color-green: #36a18b;
+  --main-color-green: #36a18b;
 
-    --bg-color-pink: #f2e8e8;
-    --bg-color-gray: #e9e9e9;
-    --bg-color-green: #e8f2ee;
-    --bg-color-wheat: #f2ece1;
+  --bg-color-pink: #f2e8e8;
+  --bg-color-gray: #e9e9e9;
+  --bg-color-green: #e8f2ee;
+  --bg-color-wheat: #f2ece1;
 
-    --text-color: #1B1B1B;
+  --text-color: #1b1b1b;
 }
 
 @font-face {
-    font-family: 'N26 medium extended';
-    src: url('assets/fonts/GT-America-Extended-Medium.latin.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "N26 medium extended";
+  src: url("assets/fonts/GT-America-Extended-Medium.latin.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'N26 medium standard';
-    src: url('assets/fonts/GT-America-Standard-Medium.latin.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "N26 medium standard";
+  src: url("assets/fonts/GT-America-Standard-Medium.latin.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'N26 regular';
-    src: url('assets/fonts/GT-America-Standard-Regular.latin.tff') format('tff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "N26 regular";
+  src: url("assets/fonts/GT-America-Standard-Regular.latin.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'N26 medium extended', Fallback, sans-serif;
+  font-family: "N26 medium extended", Fallback, sans-serif;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 h1 {
-    font-family: 'N26 medium standard', Fallback, sans-serif;
-    font-size: 2.8rem;
-    font-weight: 600;
-    line-height: 1.2;
+  font-family: "N26 medium standard", Fallback, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h2 {
-    font-family: 'N26 medium standard', Fallback, sans-serif;
-    font-size: 2.4rem;
-    font-weight: 600;
-    line-height: 1.2;
+  font-family: "N26 medium standard", Fallback, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 p {
-    font-family: 'N26 regular', Fallback, sans-serif;
-    font-size: 1rem;
-    line-height: 1.8rem;
+  font-family: "N26 regular", Fallback, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 a {
-    text-decoration: none;
-    color: #1B1B1B;
-    font-family: 'N26 regular', Fallback, sans-serif;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-family: "N26 regular", Fallback, sans-serif;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Ji's sections */
+.mobileBanking {
+  .mobileBankingContainer {
+    .mobileBankingTop {
+      background-color: var(--bg-color-green);
+      display: flex;
+      img {
+        display: flex;
+        padding: 48px;
+        width: 50vw;
+
+
+
+      }
+
+      .infoTop {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 48px;
+        justify-content: center;
+        width: 50%;
+
+      }
+    }
+
+    .mobileBankingBottom {
+      background-color: var(--bg-color-pink);
+      display: flex;
+
+      img {
+        display: flex;
+        padding: 48px;
+        width: 50vw;
+
+
+      }
+
+      .infoBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 48px;
+        justify-content: center;
+        width: 50%;
+
+      }
+    }
+  }
 }
 
 /* Marcs sections */
 .openN26Account {
-    background-color: var(--bg-color-green);
-    color: var(--text-color);
-    text-align: center;
-    padding: 40px 0;
+  background-color: var(--bg-color-green);
+  color: var(--text-color);
+  text-align: center;
+  padding: 40px 0;
 
-    .images {
-        position: relative;
-        height: 400px;
+  .images {
+    position: relative;
+    height: 400px;
 
-        img {
-            position: absolute;
-            top: 60%;
-            width: 280px;
-            transform: translate(-50%, -50%);
-            rotate: 18deg;
+    img {
+      position: absolute;
+      top: 60%;
+      width: 280px;
+      transform: translate(-50%, -50%);
+      rotate: 18deg;
 
-            @media (max-width: 768px) {
-                transform: unset;
-                rotate: unset;
-            }
-        }
-
-        .left {
-            left: 40%;
-
-            @media (max-width: 768px) {
-                left: 60%;
-                transform: translate(-50%, -50%) rotate(100deg);
-                rotate: unset;
-            }
-        }
-
-        .center {
-            left: 50%;
-            z-index: 3;
-
-            @media (max-width: 768px) {
-                transform: translate(-50%, -50%) rotate(90deg);
-                rotate: unset;
-            }
-        }
-
-        .right {
-            left: 60%;
-            @media (max-width: 768px) {
-                left: 40%;
-                transform: translate(-50%, -50%) rotate(80deg);
-                rotate: unset;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .left {
-
-            }
-
-            .center {
-
-            }
-
-            .right {
-            }
-        }
+      @media (max-width: 768px) {
+        transform: unset;
+        rotate: unset;
+      }
     }
 
+    .left {
+      left: 40%;
 
-    .innerText {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        p {
-            font-size: 1.2rem;
-        }
+      @media (max-width: 768px) {
+        left: 60%;
+        transform: translate(-50%, -50%) rotate(100deg);
+        rotate: unset;
+      }
     }
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+    .center {
+      left: 50%;
+      z-index: 3;
 
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
-
-        :last-child {
-            background-color: #36a18b;
-            color: white;
-            padding: 18px 22px;
-            border-radius: 10px;
-        }
+      @media (max-width: 768px) {
+        transform: translate(-50%, -50%) rotate(90deg);
+        rotate: unset;
+      }
     }
+
+    .right {
+      left: 60%;
+      @media (max-width: 768px) {
+        left: 40%;
+        transform: translate(-50%, -50%) rotate(80deg);
+        rotate: unset;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .left {
+      }
+
+      .center {
+      }
+
+      .right {
+      }
+    }
+  }
+
+  .innerText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    :last-child {
+      background-color: #36a18b;
+      color: white;
+      padding: 18px 22px;
+      border-radius: 10px;
+    }
+  }
 }
 
 .contract {
-    padding: 65px 20px;
+  padding: 65px 20px;
 }
 
 .faq {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    details>summary {
-        list-style: none;
+  details > summary {
+    list-style: none;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details {
+    padding: 20px 0;
+    border-top: 1px solid var(--bg-color-gray);
+
+    summary {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+
+      span svg path {
+        fill: var(--main-color-green);
+      }
     }
 
-    details>summary::-webkit-details-marker {
-        display: none;
+    p {
+      background-color: var(--bg-color-gray);
+      margin-top: 20px;
+      padding: 20px;
     }
+  }
 
-    details {
-        padding: 20px 0;
-        border-top: 1px solid var(--bg-color-gray);
-
-        summary {
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-            user-select: none;
-
-            span svg path {
-                fill: var(--main-color-green);
-            }
-        }
-
-        p {
-            background-color: var(--bg-color-gray);
-            margin-top: 20px;
-            padding: 20px;
-        }
+  details[open] {
+    span svg {
+      rotate: 90deg;
     }
-
-    details[open] {
-        span svg {
-            rotate: 90deg;
-        }
-
-    }
+  }
 }
 
 .blogs {
-    background-color: var(--bg-color-gray);
-    padding: 40px 0;
+  background-color: var(--bg-color-gray);
+  padding: 40px 0;
 
-    h2 {
-        padding-bottom: 10px;
+  h2 {
+    padding-bottom: 10px;
+  }
+
+  .innerBlogs {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    overflow: auto;
+
+    article {
+      width: 300px;
     }
 
-    .innerBlogs {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        overflow: auto;
-
-        article {
-            width: 300px;
-        }
-
-        p {
-            line-height: 1.2rem;
-
-        }
-
-        .image {
-            overflow: hidden;
-            width: 100%;
-            height: 180px;
-            border-radius: 5px;
-            scale: 1;
-
-            :hover {
-                scale: 1.1;
-                transition: 300ms ease-in;
-            }
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 300ms ease-out;
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            h3:hover {
-                color: var(--main-color-green);
-            }
-        }
+    p {
+      line-height: 1.2rem;
     }
+
+    .image {
+      overflow: hidden;
+      width: 100%;
+      height: 180px;
+      border-radius: 5px;
+      scale: 1;
+
+      :hover {
+        scale: 1.1;
+        transition: 300ms ease-in;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 300ms ease-out;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h3:hover {
+        color: var(--main-color-green);
+      }
+    }
+  }
 }
