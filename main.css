@@ -12,6 +12,7 @@
   --bg-color-wheat: #f2ece1;
 
   --text-color: #1b1b1b;
+  --text-color-gray: #6d6d6d;
 }
 
 @font-face {
@@ -109,7 +110,6 @@ a {
       display: flex;
       img {
         display: flex;
-
         padding: 48px;
         width: 50vw;
       }
@@ -126,6 +126,131 @@ a {
   }
 }
 
+.accountSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  text-align: center;
+
+  .accountSection p {
+    min-height: 20%;
+  }
+  .cardContainer {
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+
+    .singleCard {
+      flex: 0 0 auto;
+      width: 300px;
+      border-radius: 5px;
+      scroll-snap-align: start;
+
+      .cardTop {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          text-align: center;
+          line-height: 1.2;
+        }
+
+        p:nth-child(-n + 4) {
+          color: var(--text-color-gray);
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          max-width: 50%;
+        }
+      }
+
+      .cardBottom {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+
+        .accountDetail {
+          display: flex;
+          color: var(--text-color-gray);
+
+          p {
+            line-height: 1.3;
+          }
+        }
+
+        .cardButton {
+          background-color: var(--main-color-green);
+          color: white;
+          width: 70%;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          align-self: center;
+        }
+      }
+    }
+
+    .cardOne {
+      border: solid 1px var(--main-color-green);
+      .cardTop {
+        background-color: var(--bg-color-green);
+      }
+    }
+
+    .cardTwo {
+      border: solid 1px var(--bg-color-pink);
+      .cardTop {
+        background-color: var(--bg-color-pink);
+      }
+    }
+
+    .cardThree {
+      border: solid 1px rgb(109, 162, 208);
+      .cardTop {
+        background-color: lightblue;
+      }
+    }
+
+    .cardFour {
+      border: solid 1px gray;
+      .cardTop {
+        background-color: lightgray;
+      }
+    }
+  }
+
+  .accountPara {
+    min-height: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileBankingOneContainer {
+    .mobileBankingOne {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .mobileBankingTwoSection {
+    .mobileBankingTwo {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}
 /* Marcs sections */
 .openN26Account {
   background-color: var(--bg-color-green);
